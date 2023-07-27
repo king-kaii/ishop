@@ -1,0 +1,10 @@
+<h2>User login</h2>
+<form #frmLogin="ngForm" (submit)="LoginClick(frmLogin.value)"> 
+    <dl>
+        <dt>User Id</dt>
+        <dd><input type="text" name="UserId" ngModel #UserId="ngModel"></dd>
+        <dt>Password</dt>
+        <dd><input type="password" name="Password" ngModel #Password="ngModel"></dd>
+    </dl>
+    <button class="btn btn-dark">LogIn</button>
+</form>
